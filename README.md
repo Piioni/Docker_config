@@ -1,52 +1,55 @@
-# 🐳 Configuración de Docker
+# 🐳 Docker Configuration Repository
 
-Este es mi repositorio para archivos de configuración de Docker. Aquí encontrarás configuraciones para un proyecto simple de PHP con Apache. 🚀
-
----
-
-## 📋 Prerrequisitos
-- Tener Docker instalado en tu máquina.
+Welcome to my repository for Docker configuration files! Here you'll find setup files for a simple PHP project with Apache. 🚀
 
 ---
 
-## 🚀 Uso
-1. Clona este repositorio en tu directorio de trabajo:
+## 📋 Prerequisites
+- Make sure Docker is installed on your machine.
+
+---
+
+## 🚀 Usage
+1. Clone this repository to your working directory:
    ```bash
    git clone https://github.com/Piioni/Docker_config.git
    ```
    
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
    ```bash
    cd Docker_config
    ```
 
-3. Construye y levanta los contenedores con Docker Compose:
+3. Build and start the containers using Docker Compose:
    ```bash
    docker-compose up -d
    ```
 
-4. Para ver los logs de los contenedores:
+4. To view container logs:
    ```bash
    docker-compose logs -f
    ```
 
-5. Para detener los contenedores:
+5. To stop the containers:
    ```bash
    docker-compose down
    ```
 
 ---
 
-## 🌐 Notas
-- ¡Y eso es todo! Ahora puedes comenzar a desarrollar tu aplicación PHP. El servidor web estará disponible en `http://localhost:8080`.
+## 🌐 Notes
+- That's it! You can now start developing your PHP application. The web server will be available at `http://localhost:8080`.
 
 
-- Para acceder a la interfaz de phpMyAdmin, ve a `http://localhost:8081` en tu navegador.
+- To access the phpMyAdmin interface, go to `http://localhost:8081` in your browser.
 
 
-- Se recomienda usar un archivo `.env` para almacenar las variables de entorno de tu aplicación. Puedes usar el archivo `.env` proporcionado en este repositorio como plantilla. El archivo `docker-compose.yml` las detectará automáticamente.
+- It's recommended to use a `.env` file to store your application's environment variables. You can use the `.env` file provided in this repository as a template. The `docker-compose.yml` file will automatically detect it.
 
 
-- La configuración actual establece el directorio raíz en `/var/www/html` dentro del contenedor, con el documento raíz en `/var/www/html/public`. Puedes cambiar esto en el archivo `docker-compose.yml` si es necesario.
+- The current setup sets the root directory to `/var/www/html` inside the container, with the document root at `/var/www/html/public`. You can change this in the `docker-compose.yml` file if needed.
+
 
 ---
+
+Happy coding! ✨
