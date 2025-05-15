@@ -1,10 +1,26 @@
-
-###> symfony/framework-bundle ###
+###> Docker y configuración general ###
 /.env.local
 /.env.local.php
 /.env.*.local
+/.env.dev.local
+/.env.prod.local
+/docker-compose.override.yml
+
+### IDEs y editores ###
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.phpstorm.meta.php
+.phpunit.result.cache
+
+### Archivos del sistema ###
+.DS_Store
+Thumbs.db
+
+###> symfony/framework-bundle ###
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
-/var/
-/vendor/
+/app/var/
+/app/vendor/
 ###< symfony/framework-bundle ###
